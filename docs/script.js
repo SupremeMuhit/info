@@ -416,7 +416,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div id="getStartedModal" class="modal">
         <div class="modal-content image-modal-content">
           <button id="closeGetStartedBtn" class="close-modal-btn">✖</button>
-          <img src="../assets/get_started.webp" alt="Get Started">
+          <img src="https://github.com/SupremeMuhit/site/blob/main/assets/get_started.webp?raw=true" alt="Get Started">
         </div>
       </div>
     `;
@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const getStartedModal = document.getElementById("getStartedModal");
   const closeGetStartedBtn = document.getElementById("closeGetStartedBtn");
-  const getStartedAudio = new Audio("../assets/get_started.mp3");
+  const getStartedAudio = new Audio("https://github.com/SupremeMuhit/site/raw/refs/heads/main/assets/get_started.mp3");
 
   if (getStartedBtn) {
     getStartedBtn.addEventListener("click", (e) => {
