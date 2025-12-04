@@ -751,6 +751,28 @@ body {
     background: rgba(0, 0, 0, 0.8);
 }
 
+/* Mobile optimization for image modal */
+@media (max-width: 768px) {
+    .image-modal-content {
+        padding: 0;
+    }
+    
+    .image-modal-content img {
+        width: 100%;
+        min-height: 80vh;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .close-modal-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
+}
+
 /* Light Mode Styles */
 body.light-mode {
     --bg-primary: #ffffff;
