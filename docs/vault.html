@@ -54,15 +54,15 @@
           <a href="myfavsites.html" class="nav-item">
             <span class="icon">💾</span> My Favourite site
           </a>
+          <a href="tierlists.html" class="nav-item">
+            <span class="icon">📊</span> Tierlists
+          </a>
           <a
             href="javascript:void(0)"
             class="nav-item active"
             id="secretVaultSidebarLink"
           >
             <span class="icon">🔒</span> Secret Vault
-          </a>
-          <a href="#" class="nav-item">
-            <span class="icon">🔖</span> Section 4
           </a>
           <div class="nav-divider"></div>
           <a href="#" class="nav-item">
@@ -89,9 +89,7 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
+            <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         </button>
         <header class="top-bar">
@@ -115,7 +113,7 @@
           <div class="breadcrumbs">Home / Secret Vault</div>
         </header>
 
-        <div class="content-wrapper">
+        <div class="content-wrapper" id="vaultContent" style="display: none">
           <section class="hero-section">
             <h1 class="hero-title">Secret Vault</h1>
             <p class="hero-subtitle">

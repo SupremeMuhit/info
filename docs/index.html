@@ -54,15 +54,15 @@
           <a href="myfavsites.html" class="nav-item">
             <span class="icon">💾</span> My Favourite site
           </a>
+          <a href="tierlists.html" class="nav-item">
+            <span class="icon">📊</span> Tierlists
+          </a>
           <a
             href="javascript:void(0)"
             class="nav-item"
             id="secretVaultSidebarLink"
           >
             <span class="icon">🔒</span> Secret Vault
-          </a>
-          <a href="#" class="nav-item">
-            <span class="icon">🔖</span> Section 4
           </a>
           <div class="nav-divider"></div>
           <a href="#" class="nav-item">
@@ -89,42 +89,149 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
+            <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         </button>
         <header class="top-bar">
-          <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+          <div class="top-bar-left">
+            <button class="menu-btn" id="menuBtn" aria-label="Open Menu">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+            <div class="logo-text">TSS</div>
+          </div>
+
+          <div class="top-bar-center">
+            <div class="search-wrapper">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="search-icon"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input
+                type="text"
+                placeholder="Search..."
+                class="top-search-input"
+              />
+            </div>
+          </div>
+
+          <div class="top-bar-right">
+            <button
+              class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle Theme"
             >
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </button>
-          <div class="breadcrumbs">Home / Welcome</div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="sun-icon"
+              >
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="moon-icon"
+                style="display: none"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                ></path>
+              </svg>
+            </button>
+            <a
+              href="https://github.com/SupremeMuhit"
+              target="_blank"
+              class="github-link"
+              aria-label="GitHub"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </header>
 
         <div class="content-wrapper">
           <section class="hero-section">
-            <h1 class="hero-title">Welcome to Muhit's Website</h1>
-            <p class="hero-subtitle">
-              Hey I am a website owned by <b>Supreme Muhit</b>
-            </p>
-
-            <div class="hero-buttons">
-              <a href="#" class="btn btn-primary">Get Started</a>
-              <a href="#" class="btn btn-secondary">Learn More</a>
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="hero-title">The Supreme's Site</h1>
+                <p class="hero-subtitle">
+                  Hey I am a website owned by Supreme Muhit
+                </p>
+                <div class="hero-buttons">
+                  <a
+                    href="https://github.com/SupremeMuhit"
+                    class="btn btn-primary"
+                    >GitHub</a
+                  >
+                  <a href="sociallinks.html" class="btn btn-secondary"
+                    >Socials</a
+                  >
+                </div>
+              </div>
+              <div class="hero-image">
+                <img src="../assets/My Profile Pic.png" alt="Supreme Muhit" />
+              </div>
             </div>
           </section>
 
