@@ -1,7 +1,0 @@
-{
-  "name": "my-static-site",
-  "compatibility_date": "2025-12-13",
-  "assets": {
-    "directory": "./docs"
-  }
-}
