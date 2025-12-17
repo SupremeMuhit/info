@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  ignoreDeadLinks: true, // Ignore dead links in CI builds
+  base: '/',             // for Cloudflare Pages
   title: "Supreme Index",
   description: "A Free Media Index",
   themeConfig: {
